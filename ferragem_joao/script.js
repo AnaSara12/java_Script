@@ -7,8 +7,17 @@ const precos={
     "chave de fenda":10.99,
     "serrote":30.00,
 };
-//atualizar campo de preço automaticamente ao escolher produto
-document.getElementById('produto').addEventListener('change',function(){
-    const precos =
-    precos
-})
+//ACESSAR GUARDAR A QUANTIDADE
+let qtd = document.getElementById("quantidade").value;
+
+console.log(qtd);
+
+
+//CACULAR O PREÇO TOTAL
+function calcularPreco(){
+
+    let qtd = document.getElementById("quantidade").value;
+    let escolha = document.getElementById("produto").value;
+    let valortxoal = qtd * precos[escolha]
+    document.getElementById("resultado").innerHTML = valortxoal;
+}
