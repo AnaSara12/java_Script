@@ -1,0 +1,83 @@
+/* Paleta de cores clássicas */
+:root {
+    --azul-escuro: #1a1a40;
+    --cinza-claro: #e0e0e0;
+    --branco: #ffffff;
+    --cinza-texto: #333;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, var(--azul-escuro), var(--cinza-texto));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+  }
+  
+  /* Título principal da empresa */
+  h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  }
+  
+  /* Container para centralizar o conteúdo */
+  form, .conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255,255,255,0.1);
+    padding: 30px 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  
+  /* Estilização dos labels e campos */
+  label {
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  select, input[type="number"] {
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    width: 250px;
+    font-size: 16px;
+    color: var(--cinza-texto);
+    background-color: var(--cinza-claro);
+  }
+  
+  /* Botão de ação */
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--azul-escuro);
+    background-color: var(--branco);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #dcdcdc;
+  }
+  
+  /* Resultado */
+  #resultado {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
