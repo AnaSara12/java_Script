@@ -34,3 +34,12 @@ function calcularPreco(){
     console.log(estoque[escolha])
 
 }
+
+function ADDeSTOQUE(){
+    let qtd = document.getElementById("quantidade").value; //ACESSANDO CAMPO QUANTIDADE E SALVANDO
+    let escolha = document.getElementById("produto").value;  //ACESSAR PROIDUTO E GUARDAR QUABTIDADE
+
+    //ACESSAR O ESTOQUE E SOMAR A QUANTIDADE
+    estoque[escolha] = qtd;
+
+}
