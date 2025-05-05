@@ -32,7 +32,7 @@
         <section>
             <h2>Estoque João</h2>
             <label for="produto">produto</label>
-            <select id="produto">
+            <select id="produto-estoque">
                 <option value="">--selecione um produto</option>
                 <option value="parafuso">parafuso</option>
                 <option value="martelo">martelo</option>
@@ -40,9 +40,9 @@
                 <option value="serrote">serrote</option>
             </select>
 
-            <input type="number" id="quantidade" min="0" placeholder="digite a quantidade"><b><br> <!--quantidade de produto -->
+            <input type="number" id="quantidade-estoque" min="0" placeholder="digite a quantidade"><b><br> <!--quantidade de produto -->
                 <button onclick="ADDeSTOQUE()">aDICIONAR ESTOQUE</button>
-
+                <h1 id="quantidadeEstoque"></h1>
         </section>
         <script src="script.js"></script>
 </body>

@@ -26,7 +26,7 @@ function calcularPreco(){
         document.getElementById("resultado").innerHTML = valortotal.toFixed(2); //exibir o resultado 
         estoque[escolha] -= qtd; // calculo do estoque pra quando for tirando
         window.alert("compra realizada com sucesso "  + "valor total: " + valortotal.toFixed(2))
-         
+        
     // aparece a mensagem na tela se não tive mais nada no estoque 
     }else{
         window.alert("ESTOQUE INDISPONIVEL")
@@ -36,10 +36,14 @@ function calcularPreco(){
 }
 
 function ADDeSTOQUE(){
-    let qtd = document.getElementById("quantidade").value; //ACESSANDO CAMPO QUANTIDADE E SALVANDO
-    let escolha = document.getElementById("produto").value;  //ACESSAR PROIDUTO E GUARDAR QUABTIDADE
+    let qtd = document.getElementById("quantidade-estoque").value; //ACESSANDO CAMPO QUANTIDADE E SALVANDO
+    let escolha = document.getElementById("produto-estoque").value;  //ACESSAR PROIDUTO E GUARDAR QUABTIDADE
 
     //ACESSAR O ESTOQUE E SOMAR A QUANTIDADE
-    estoque[escolha] = qtd;
+    //pra ve o que tem no estoque 
+        estoque[escolha] += qtd;
+        console.log(estoque[escolha]);
+        window.alert("Adicionado no estoque com sucesso")
+        document.getElementById("quantidadeEstoque").innerHTML = estoque[escolha];
 
 }
