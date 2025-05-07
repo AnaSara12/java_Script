@@ -36,14 +36,17 @@ function calcularPreco(){
 }
 
 function ADDeSTOQUE(){
-    let qtd = document.getElementById("quantidade-estoque").value; //ACESSANDO CAMPO QUANTIDADE E SALVANDO
+    let qtd = parseInt(document.getElementById("quantidade-estoque").value); //ACESSANDO CAMPO QUANTIDADE E SALVANDO
     let escolha = document.getElementById("produto-estoque").value;  //ACESSAR PROIDUTO E GUARDAR QUABTIDADE
-
+    console.log(escolha);
     //ACESSAR O ESTOQUE E SOMAR A QUANTIDADE
     //pra ve o que tem no estoque 
+    if(qtd > 0){ 
         estoque[escolha] += qtd;
         console.log(estoque[escolha]);
         window.alert("Adicionado no estoque com sucesso")
         document.getElementById("quantidadeEstoque").innerHTML = estoque[escolha];
-
+    }else{
+        window.alert("estoque disponivel")
+    }
 }
